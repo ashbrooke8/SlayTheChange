@@ -6,13 +6,10 @@
     <title>Hidden Haven</title>
     <!-- IMPORT STYLESHEETS -->
     <link rel="stylesheet" href="css/index.css" />
-    <script src="/js/landing.js"></script>
-
     <link
       href="https://fonts.googleapis.com/css?family=Baloo"
       rel="stylesheet"
     />
-    <!-- IMPORT SCRIPTS -->
   </head>
   <body>
     <div class="navigation">
@@ -28,14 +25,14 @@
         Use the dropdown below to pick what you need—cafés, gyms, boutiques, and
         more—and discover a place that makes you feel right at home.
       </p>
-      <div class="custom-dropdown">
-        <button class="dropdown-button">Choose a location!</button>
-        <div class="dropdown-options">
-          <div class="dropdown-option">Cafe</div>
-          <div class="dropdown-option">Clothing Store</div>
-          <div class="dropdown-option">Restaurant</div>
-          <div class="dropdown-option">Grocery Store</div>
-        </div>
+      <div class="dropdown-container">
+        <select class="dropdown-select">
+          <option value="" disabled selected>Choose a location...</option>
+          <option value="cafe">Cafe</option>
+          <option value="clothing-store">Clothing Store</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="grocery-store">Grocery Store</option>
+        </select>
       </div>
     </div>
   </body>
