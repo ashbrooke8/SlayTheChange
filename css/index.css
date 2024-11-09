@@ -10,3 +10,42 @@ body {
 h1 {
   font-family: "baloo";
 }
+
+P {
+  font-family: "abeezee";
+}
+
+img {
+  width: 150px;
+}
+
+.navigation {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.login-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.site-name {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.description {
+  margin: 20px;
+  text-align: center;
+}
