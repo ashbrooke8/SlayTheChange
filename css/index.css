@@ -1,6 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
 body {
-  background-image: url("your-image.jpg"); /* Replace 'your-image.jpg' with the path to your image */
-  background-size: cover; /* Makes sure the image covers the entire page */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center; /* Positions the image in the center */
+  background-image: url("../images/Background-with-decor.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: "baloo";
+}
+
+P {
+  font-family: "abeezee";
+}
+
+img {
+  width: 150px;
+}
+
+.navigation {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.login-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.site-name {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.description {
+  margin: 20px;
+  text-align: center;
 }
