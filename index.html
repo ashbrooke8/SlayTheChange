@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css?family=Baloo"
       rel="stylesheet"
     />
-    <!-- IMPORT SCRIPTS -->
   </head>
   <body>
     <div class="navigation">
@@ -18,20 +17,23 @@
       <button class="login-button">Register</button>
     </div>
     <div class="site-name">
-      <h1>Hidden Havens</h1>
       <img src="images/logo.png" />
+      <h1>Hidden Havens</h1>
     </div>
-    <div class="description"></div>
-    <p>
-      Use the dropdown below to pick what you need—cafés, gyms, boutiques, and
-      more—and discover a place that makes you feel right at home.
-    </p>
-    <select id="options" class="dropdown-">
-      <option value="" disabled selected hidden>Choose a location...</option>
-      <option value="option1">Cafe</option>
-      <option value="option2">Clothing Store</option>
-      <option value="option3">Restaurant</option>
-      <option value="option4">Grocery Store</option>
-    </select>
+    <div class="content-box">
+      <p>
+        Use the dropdown below to pick what you need—cafés, gyms, boutiques, and
+        more—and discover a place that makes you feel right at home.
+      </p>
+      <div class="dropdown-container">
+        <select class="dropdown-select">
+          <option value="" disabled selected>Choose a location...</option>
+          <option value="cafe">Cafe</option>
+          <option value="clothing-store">Clothing Store</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="grocery-store">Grocery Store</option>
+        </select>
+      </div>
+    </div>
   </body>
 </html>

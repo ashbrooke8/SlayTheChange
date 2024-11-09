@@ -9,14 +9,18 @@ body {
 
 h1 {
   font-family: "baloo";
+  font-size: 75px;
+  color: #2d359d;
 }
 
-P {
+p {
   font-family: "abeezee";
+  font-size: 25px;
+  text-align: center;
 }
 
 img {
-  width: 150px;
+  width: 200px;
 }
 
 .navigation {
@@ -29,15 +33,22 @@ img {
 
 .login-button {
   padding: 10px 15px;
-  background-color: #4caf50;
-  color: white;
+  font-family: "baloo";
+  background-color: #d3d5f8;
+  font-size: 20px;
+  color: #2d359d;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .login-button:hover {
-  background-color: #45a049;
+  background-color: #2d359d;
+  color: #d3d5f8;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .site-name {
@@ -45,7 +56,37 @@ img {
   margin-top: 50px;
 }
 
-.description {
-  margin: 20px;
-  text-align: center;
+.content-box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  background: rgba(226, 234, 251, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-container {
+  margin-top: 20px;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-family: "abeezee";
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #888;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border: 1px solid #2d359d;
+}
+
+.dropdown-select option {
+  color: #333;
 }
