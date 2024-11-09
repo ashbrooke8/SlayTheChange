@@ -9,10 +9,13 @@ body {
 
 h1 {
   font-family: "baloo";
+  font-size: 75px;
+  color: #2d359d;
 }
 
-P {
+p {
   font-family: "abeezee";
+  font-size: 25px;
 }
 
 img {
@@ -29,15 +32,22 @@ img {
 
 .login-button {
   padding: 10px 15px;
-  background-color: #4caf50;
-  color: white;
+  font-family: "baloo";
+  background-color: #d3d5f8;
+  font-size: 20px;
+  color: #2d359d;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .login-button:hover {
-  background-color: #45a049;
+  background-color: #2d359d;
+  color: #d3d5f8;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .site-name {
@@ -45,7 +55,62 @@ img {
   margin-top: 50px;
 }
 
-.description {
-  margin: 20px;
-  text-align: center;
+.content-box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: height 0.3s ease, padding-bottom 0.3s ease;
+}
+
+.custom-dropdown {
+  position: relative;
+  margin-top: 20px;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-button::after {
+  content: "▼";
+  font-size: 12px;
+  color: #2d359d;
+  margin-right: 10px;
+}
+
+.dropdown-option {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
 }
