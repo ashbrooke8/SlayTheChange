@@ -12,9 +12,11 @@
 </head>
 <body>
     <nav>
-        <img src="images\logo.png" alt="logo" id="logo">
-        <p id="name">HIDDEN HAVENS</p>
-        <form action="/search" method="get">
+        <div id="logo-container">
+            <img src="images\logo.png" alt="logo" id="logo">
+            <p id="name">HIDDEN HAVENS</p>
+        </div>
+        <form action="/search" method="get" id="search-form">
             <input type="search" placeholder="Search..." id="search-bar">
             <button type="submit" id="search-button">Search</button>
         </form>
@@ -35,7 +37,9 @@
 
     <div class="results">
         <div class="result">
-            <div class="left-content">this will be an image</div>
+            <div class="left-content">
+                <img src="images\twistedimg.jpg" alt="" id="result-image">
+            </div>
             <div class="right-content">
                 <div class="name-money">
                     <p>Name</p>
