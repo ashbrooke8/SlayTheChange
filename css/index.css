@@ -1,6 +1,10 @@
 body {
-  background-image: url("your-image.jpg"); /* Replace 'your-image.jpg' with the path to your image */
-  background-size: cover; /* Makes sure the image covers the entire page */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center; /* Positions the image in the center */
+  background-image: url("../images/Background-with-decor.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: "baloo";
 }

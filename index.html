@@ -3,12 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hidden Haven</title>
     <!-- IMPORT STYLESHEETS -->
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo"
+      rel="stylesheet"
+    />
     <!-- IMPORT SCRIPTS -->
   </head>
   <body>
-    <h1>Hidden Havens</h1>
+    <div class="navigation">
+      <button class="login-button">Login</button>
+      <button class="login-button">Register</button>
+    </div>
+    <div class="site-name">
+      <h1>Hidden Havens</h1>
+      <img src="images/logo.png" />
+    </div>
+    <div class="description"></div>
+    <p>
+      Use the dropdown below to pick what you need—cafés, gyms, boutiques, and
+      more—and discover a place that makes you feel right at home.
+    </p>
+    <select id="options" class="dropdown-">
+      <option value="" disabled selected hidden>Choose a location...</option>
+      <option value="option1">Cafe</option>
+      <option value="option2">Clothing Store</option>
+      <option value="option3">Restaurant</option>
+      <option value="option4">Grocery Store</option>
+    </select>
   </body>
 </html>
