@@ -1,0 +1,43 @@
+body {
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 2px solid black;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 2px solid black;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid black;
+}
+
+.name-money {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+}
