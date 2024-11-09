@@ -1,25 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
 body {
-    
+     background-image: url("../images/background-no-decor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: ABeeZee;
+    color: #2D359D;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    outline: 2px solid black;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    height: 50px;
+}
+
+#name {
+    font-family: "baloo";
+    font-size: 40px;
+    color: #2D359D;
+}
+
+#search-bar {
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #2D359D; 
+    border-radius: 10px; 
+}
+
+#search-button {
+    height: 40px;
+    font-size: 16px;
+    margin-left: 5px; 
+    padding: 0 10px;
+    border: 2px solid #2D359D;
+    background-color: #2D359D; 
+    color: white; 
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#login-button {
+    height: 40px;
+    font-size: 16px;
+    margin-left: 5px; 
+    padding: 0 10px;
+    border: 2px solid #2D359D;
+    background-color: #2D359D; 
+    color: white; 
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#result-count {
+    color: #2D359D;
+    font-family: ABeeZee;
+    font-weight: bold;
 }
 
 .content-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    outline: 2px solid black;
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.filter-area {
+    background: white;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 20%;
+    padding: 20px;
+}
+
+#filter-results {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;        /* Removes the bullet points */
+    padding: 0;                   /* Removes default padding */
+}
+
+ul li {
+    background-color: #D3D5F8;    /* Sets the background color */
+    padding: 10px 15px;           /* Adds padding for spacing */
+    margin: 5px 0;                /* Adds space between list items */
+    border-radius: 20px;           /* Rounds the corners */
+}
+
+.results {
+    flex: 2;
+    max-width: 80%; 
 }
 
 .result {
     display: flex;
     flex-direction: row;
-    outline: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .name-money {
