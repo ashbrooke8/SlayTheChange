@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
+body {
+    background-image: url("../images/background-with-decor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: ABeeZee;
+    color: #2D359D;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+}
+
+#site-name {
+    font-family: "baloo";
+    font-size: 64px;
+    color: #2D359D;
+}
+
+form{
+    display: flexbox;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Reduced padding */
+    gap: 15px; /* Adjust gap if needed */
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+#log-in{
+    font-family: "baloo";
+    font-size: 32px;
+    color: #2D359D;
+}
+
+#goog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#googlelogo{
+    width: 20px;
+    height: 20px;
+}
