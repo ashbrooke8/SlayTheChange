@@ -118,6 +118,8 @@ img {
   flex: 1;
   max-width: 20%;
   padding: 20px;
+  max-height: 550px; 
+  overflow-y: auto;
 }
 
 #filter-results {
@@ -157,6 +159,7 @@ ul li {
 .results {
   flex: 2;
   max-width: 80%;
+  
 }
 
 .result {
