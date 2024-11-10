@@ -1,5 +1,5 @@
 <?php
-$csvFile = 'locations.csv';
+$csvFile = 'new_locations.csv';
 $locations = [];
 
 $searchTerm = isset($_GET['search']) ? strtolower(trim($_GET['search'])) : '';
@@ -145,7 +145,7 @@ $imageMap = [
               <img id="result-image" src="<?php echo htmlspecialchars($imagePath); ?>" alt="Location Image">
 
               <div class="rating">
-                <p>♡ <?php echo htmlspecialchars($location['favorites']); ?></p>
+                <p>♡ <?php echo htmlspecialchars($location['favourites']); ?></p>
                 <p>👎 <?php echo htmlspecialchars($location['dislikes']); ?></p>
               </div>
             </div>
