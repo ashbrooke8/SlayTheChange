@@ -17,8 +17,8 @@ nav {
 
 a {
     text-decoration: none;
-  }
-  
+}
+
 
 #logo-container {
     display: flex;
@@ -31,10 +31,6 @@ a {
     width: 80px;
     height: 70px;
     margin: 0;
-}
-
-nav a {
-    text-decoration: none;
 }
 
 #site-name {
@@ -93,6 +89,7 @@ nav a {
     height: 50px;
     margin: 0;
     max-width: 400px;
+    min-width: 200px;
 }
 
 input[type=text] {
