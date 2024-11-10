@@ -44,18 +44,18 @@ $imageMap = [
   '10' => 'images/locations/planetthrift.jpg',
   '11' => 'images/locations/dynamite.jpg',
   '12' => 'images/locations/hm.jpg',
-  '13' => 'images/locations/zara.jpg',
-  '14' => 'images/locations/goodwill.jpg',
-  '15' => 'images/locations/safeway.jpg',
-  '16' => 'images/locations/naturesbasket.jpg',
-  '17' => 'images/locations/thegreenmarket.jpg',
-  '18' => 'images/locations/budgetgrocers.jpg',
-  '19' => 'images/locations/rainbowfoods.jpg',
-  '20' => 'images/locations/bostonpizza.jpg',
-  '21' => 'images/locations/vegandelights.jpg',
-  '22' => 'images/locations/happydiner.jpg',
-  '23' => 'images/locations/rainboweatery.jpg',
-  '24' => 'images/locations/dennys.jpg',
+  // '13' => 'images/locations/zara.jpg',
+  // '14' => 'images/locations/goodwill.jpg',
+  // '15' => 'images/locations/safeway.jpg',
+  // '16' => 'images/locations/naturesbasket.jpg',
+  // '17' => 'images/locations/thegreenmarket.jpg',
+  // '18' => 'images/locations/budgetgrocers.jpg',
+  // '19' => 'images/locations/rainbowfoods.jpg',
+  // '20' => 'images/locations/bostonpizza.jpg',
+  // '21' => 'images/locations/vegandelights.jpg',
+  // '22' => 'images/locations/happydiner.jpg',
+  // '23' => 'images/locations/rainboweatery.jpg',
+  // '24' => 'images/locations/dennys.jpg',
 ];
 ?>
 
@@ -77,7 +77,7 @@ $imageMap = [
     <a href="index.html" id="site-name">Hidden Havens</a>
     </div>
     <form method="get" action="locations.php" id="search-form">
-      <input type="search" name="search" placeholder="Search (e.g. Cafe, Starbucks)..." id="search-bar"
+      <input type="search" name="search" placeholder="Search (e.g. Cafe, Clothing Store)..." id="search-bar"
         value="<?php echo htmlspecialchars($searchTerm); ?>">
       <button type="submit" id="search-button">Search</button>
     </form>
