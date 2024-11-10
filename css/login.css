@@ -37,35 +37,181 @@ nav {
 }
 
 form{
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    background: #E2EAFB;
-    opacity:85;
-    border-radius: 10px;
+    background-color: rgba(226, 234, 251, 0.75);
+    border-radius: 15px;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px; /* Reduced padding */
+    padding: 30px; /* Reduced padding */
     gap: 15px; /* Adjust gap if needed */
     margin-bottom: 20px;
     width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #log-in{
     font-family: "baloo";
-    font-size: 32px;
+    font-size: 40px;
     color: #2D359D;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #goog-container{
     display: flex;
     align-items: center;
     justify-content: center; 
+    background-color: #ffffff; /* White background for Google sign-in */
+    border-radius: 10px; /* Rounded corners */
+    padding: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    font-family: "ABeeZee";
+    font-size: 18px;
+    color: #2D359D;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+#top-container {
+    align-items: center;
+    text-align: center;
+}
+
+#goog-container:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
 }
 
 #googlelogo{
     width: 20px;
     height: 20px;
+    margin-right: 8px;
+}
+
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "ABeeZee";
+    border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Spacing between input fields */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #2D359D; /* Blue border on focus */
+}
+
+/* Sign-in button styling */
+button[type="submit"], .sign-in-button {
+    padding: 12px 0;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Baloo";
+    color: #ffffff;
+    background-color: #2D359D; /* Blue background */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+button[type="submit"]:hover, .sign-in-button:hover {
+    background-color: #1A237E; /* Darker shade of blue on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Link styling within the form */
+form a {
+    font-family: "ABeeZee";
+    font-size: 16px;
+    color: #2D359D;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+form a:hover {
+    color: #1A237E; /* Darker color on hover */
+}
+
+/* Aligning links at the bottom */
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 20px; /* Space above links */
+}
+
+/* Style for the form fields container */
+#form-fields {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each form group */
+}
+
+/* Flex container for each label and input pair */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label above the input */
+    align-items: flex-start; /* Align label and input to the left */
+}
+
+/* Label styling */
+.form-group label {
+    font-family: "ABeeZee", sans-serif;
+    color: #2D359D;
+    font-size: 16px;
+    margin-bottom: 5px; /* Space between label and input */
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #2D359D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Baloo", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #1A237E;
+}
+
+label {
+    font-weight: bold;
+}
+
+#questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#questions p {
+    font-weight: bold;
 }

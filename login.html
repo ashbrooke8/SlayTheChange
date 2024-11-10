@@ -19,30 +19,31 @@
     </nav>
 
     <form action="/action_page.php" method="get">
-        <div >
+        <div id="top-container">
             <p id="log-in">LOG IN</p>
             
             <div id="goog-container">
                 <img src="images\google.png" alt="googlelogo" id="googlelogo">
                 <p> </p>
-                <p>&nbsp;&nbsp;Sign in with Google </p>
+                <p id="sign-in-google">&nbsp;&nbsp;Sign in with Google </p>
             </div>
         </div>
-
-       <dl>
-        <dt><label for="username" >Username</label></dt>
-        <dd>
-            <input type="text" id="username" name="username" placeholder="Enter your username" >
-        </dd>
-        <dt><label for="password" >Password</label></dt>
-        <dd>
-            <input type="text" id="password" name="password" placeholder="Enter your password" >
-        </dd>
-        <dd>
+        <div id="form-fields">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            
             <button type="submit">Sign in</button>
-        </dd>
-       </dl>
-       <div>
+        </div>
+        
+    </div>
+       <div id="questions">
         <p>Forgot your password?</p>
         <p>Don't have an account? <a href="">Sign up?</a></p>
        </div>
