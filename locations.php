@@ -117,7 +117,7 @@ $imageMap = [
 
     <div class="results">
       <?php if (!empty($locations)): ?>
-        <p id="result-count"><?php echo count($locations); ?> Results found</p>
+        <p id="result-count"><?php echo count($locations); ?> Results Found:</p>
         <?php foreach ($locations as $location): ?>
           <div class="result">
             <div class="left-content">
