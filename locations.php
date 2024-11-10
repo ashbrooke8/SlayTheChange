@@ -111,7 +111,7 @@ if (($handle = fopen($csvFile, "r")) !== false) {
               <p id="description"><?php echo htmlspecialchars($location['description']); ?></p>
               <div class="tags">
                 <?php
-                $tags = explode('|', $location['tags']);
+                $tags = preg_split('/[\|,]/', $location['tags']);
                 foreach ($tags as $tag): ?>
                   <p class="tag"><?php echo htmlspecialchars(trim($tag)); ?></p>
                 <?php endforeach; ?>
