@@ -18,8 +18,8 @@ id,name,type,address,description,tags,city,price,dislikes,favorites, image
 17,The Green Market,Grocery Store,789 Fresh Ave,"Locally sourced fruits, vegetables, and dairy products",Accessible|Eco-Friendly|LGBTQ+,,$$,7,145,images/locations/starbucks.jpg
 18,Budget Grocers,Grocery Store,101 Savings Rd,Affordable groceries for everyday needs,Accessible|Body Positive,,$,20,175,images/locations/starbucks.jpg
 19,Rainbow Foods,Grocery Store,202 Color Dr,Inclusive grocery store with a focus on diversity,LGBTQ+|Body Positive|Accessible,,$$,5,165,images/locations/starbucks.jpg
-20,The Green Planet,Restaurant,123 Spruce St,Eco-friendly vegan restaurant committed to sustainability,Accessible|LGBTQ+|Eco-Friendly|All-Gender Bathrooms,,$$$,10,175,images/locations/starbucks.jpg
+20,Boston Pizza,Restaurant,123 Spruce St,Eco-friendly vegan restaurant committed to sustainability,Accessible|LGBTQ+|Eco-Friendly|All-Gender Bathrooms,,$$$,10,175,images/locations/starbucks.jpg
 21,Vegan Delights,Restaurant,456 Herb St,Vegan food with locally-sourced ingredients,Accessible|Eco-Friendly,,$$,5,200,images/locations/starbucks.jpg
 22,Happy Diner,Restaurant,789 Comfort Blvd,Family-friendly diner with comfort food favorites,Accessible|Body Positive,,$,25,180,images/locations/starbucks.jpg
 23,Rainbow Eatery,Restaurant,101 Unity Ave,Inclusive menu catering to all dietary preferences,LGBTQ+|Accessible|Body Positive,,$$,15,150,images/locations/starbucks.jpg
-24,Nature's Plate,Restaurant,202 Healthy Way,Plant-based dishes with a health-focused approach,Women-Centered|Eco-Friendly|Accessible,,$$,8,140,images/locations/starbucks.jpg
+24,Denny's,Restaurant,202 Healthy Way,Plant-based dishes with a health-focused approach,Women-Centered|Eco-Friendly|Accessible,,$$,8,140,images/locations/starbucks.jpg

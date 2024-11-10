@@ -54,9 +54,17 @@ $imageMap = [
   '11' => 'images/locations/dynamite.jpg',
   '12' => 'images/locations/hm.jpg',
   '13' => 'images/locations/zara.jpg',
-
-
-  // Add more mappings here if needed
+  '14' => 'images/locations/goodwill.jpg',
+  '15' => 'images/locations/safeway.jpg',
+  '16' => 'images/locations/naturesbasket.jpg',
+  '17' => 'images/locations/thegreenmarket.jpg',
+  '18' => 'images/locations/budgetgrocers.jpg',
+  '19' => 'images/locations/rainbowfoods.jpg',
+  '20' => 'images/locations/bostonpizza.jpg',
+  '21' => 'images/locations/vegandelights.jpg',
+  '22' => 'images/locations/happydiner.jpg',
+  '23' => 'images/locations/rainboweatery.jpg',
+  '24' => 'images/locations/dennys.jpg',
 ];
 ?>
 
