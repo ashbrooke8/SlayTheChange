@@ -90,9 +90,9 @@ nav {
 .content-box {
     display: flex;
     flex-direction: row;
-    width: 90%;
     gap: 20px;
     padding: 20px;
+    justify-content: space-evenly;
 }
 
 .filter-area {
@@ -113,7 +113,7 @@ ul {
 }
 
 ul li {
-    background-color: #D3D5F8;
+    background-color: #E4E6FB;
     padding: 10px 15px;
     margin: 5px 0;
     border-radius: 20px;
@@ -130,12 +130,13 @@ ul li {
     background: white;
     border-radius: 10px;
     padding: 20px;
-    margin-right: 20px;
     gap: 30px;
 }
 
 #result-image {
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .name-money {
@@ -161,7 +162,7 @@ ul li {
 }
 
 .tag {
-    background-color: #D3D5F8;
+    background-color: #E4E6FB;
     padding: 10px 15px;
     margin: 5px 0;
     border-radius: 20px;
@@ -175,7 +176,8 @@ ul li {
 .review {
     display: flex;
     flex-direction: row;
-    background-color: #D3D5F8;
-    padding: 10px 15px;
+    background-color: #E4E6FB;
     border-radius: 15px;
+    padding: 0px 15px;
+    justify-content: space-between;
 }
