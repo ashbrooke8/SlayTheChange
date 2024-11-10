@@ -169,7 +169,7 @@ img {
   bottom: 0;
   background-image: url('../images/background-no-decor.png');
   background-size: cover;
-  filter: blur(8px); /* Apply the blur effect */
+  filter: blur(16px); /* Apply the blur effect */
   z-index: 0; /* Behind the main image */
   clip-path: inset(10px); /* Adjust this value to control the inner blur */
 }
