@@ -73,8 +73,8 @@ $imageMap = [
 <body>
   <nav>
     <div id="logo-container">
-    <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a> 
-    <a href="index.html" id="site-name">Hidden Havens</a>
+      <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a>
+      <a href="index.html" id="site-name">Hidden Havens</a>
     </div>
     <form method="get" action="locations.php" id="search-form">
       <input type="search" name="search" placeholder="Search (e.g. Cafe, Clothing Store)..." id="search-bar"
@@ -86,51 +86,51 @@ $imageMap = [
   </nav>
 
   <div class="content-box">
-  <div class="filter-area">
-    <p id="filter-results">Filter Results</p>
-    <form method="get" action="locations.php" id="filter-form">
-      <input type="hidden" name="search" value="<?php echo htmlspecialchars($searchTerm); ?>">
+    <div class="filter-area">
+      <p id="filter-results">Filter Results</p>
+      <form method="get" action="locations.php" id="filter-form">
+        <input type="hidden" name="search" value="<?php echo htmlspecialchars($searchTerm); ?>">
 
-      <label>
-        <input type="checkbox" name="tags[]" value="Women-Centered" <?php echo in_array('Women-Centered', $selectedTags) ? 'checked' : ''; ?>>
-        Women-Centered
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="Women-Centered" <?php echo in_array('Women-Centered', $selectedTags) ? 'checked' : ''; ?>>
+          Women-Centered
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="LGBTQ+" <?php echo in_array('LGBTQ+', $selectedTags) ? 'checked' : ''; ?>>
-        LGBTQ+
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="LGBTQ+" <?php echo in_array('LGBTQ+', $selectedTags) ? 'checked' : ''; ?>>
+          LGBTQ+
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="Accessible" <?php echo in_array('Accessible', $selectedTags) ? 'checked' : ''; ?>>
-        Accessible
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="Accessible" <?php echo in_array('Accessible', $selectedTags) ? 'checked' : ''; ?>>
+          Accessible
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="Body Positive" <?php echo in_array('Body Positive', $selectedTags) ? 'checked' : ''; ?>>
-        Body Positive
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="Body Positive" <?php echo in_array('Body Positive', $selectedTags) ? 'checked' : ''; ?>>
+          Body Positive
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="All-Gender Bathrooms" <?php echo in_array('All-Gender Bathrooms', $selectedTags) ? 'checked' : ''; ?>>
-        All-Gender Bathrooms
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="All-Gender Bathrooms" <?php echo in_array('All-Gender Bathrooms', $selectedTags) ? 'checked' : ''; ?>>
+          All-Gender Bathrooms
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="Sensory-Friendly" <?php echo in_array('Sensory-Friendly', $selectedTags) ? 'checked' : ''; ?>>
-        Sensory-Friendly
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="Sensory-Friendly" <?php echo in_array('Sensory-Friendly', $selectedTags) ? 'checked' : ''; ?>>
+          Sensory-Friendly
+        </label>
 
-      <label>
-        <input type="checkbox" name="tags[]" value="Eco-Friendly" <?php echo in_array('Eco-Friendly', $selectedTags) ? 'checked' : ''; ?>>
-        Eco-Friendly
-      </label>
+        <label>
+          <input type="checkbox" name="tags[]" value="Eco-Friendly" <?php echo in_array('Eco-Friendly', $selectedTags) ? 'checked' : ''; ?>>
+          Eco-Friendly
+        </label>
 
-      <br><br>
-      <button type="submit" id="filter-button">Filter</button>
-    </form>
-  </div>
-<!-- </div> -->
+        <br><br>
+        <button type="submit" id="filter-button">Filter</button>
+      </form>
+    </div>
+    <!-- </div> -->
 
     <div class="results">
       <?php if (!empty($locations)): ?>
@@ -176,20 +176,20 @@ $imageMap = [
   </div>
 
   <script>
-  document.querySelectorAll("label input[type='checkbox']").forEach(checkbox => {
-    checkbox.addEventListener("change", function () {
-      if (this.checked) {
-        this.parentNode.classList.add("active");
-      } else {
-        this.parentNode.classList.remove("active");
+    document.querySelectorAll("label input[type='checkbox']").forEach(checkbox => {
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          this.parentNode.classList.add("active");
+        } else {
+          this.parentNode.classList.remove("active");
+        }
+      });
+      // Initialize active state on page load if checkbox is already checked
+      if (checkbox.checked) {
+        checkbox.parentNode.classList.add("active");
       }
     });
-    // Initialize active state on page load if checkbox is already checked
-    if (checkbox.checked) {
-      checkbox.parentNode.classList.add("active");
-    }
-  });
-</script>
+  </script>
 </body>
 
 </html>

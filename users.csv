@@ -1,0 +1,7 @@
+username,password,email,full_name,date_of_birth,account_type
+vik,password,vbolg@mtroyal,ca,Viktoriya Bolgachenko,1992-05-14,standard
+Lilac,securePass456,user2@example.com,Jane Smith,1988-11-22,premium
+user3,myPass789,user3@example.com,Mike Johnson,1995-07-03,standard
+user4,password321,user4@example.com,Emily Davis,1990-02-15,premium
+user5,pass456,user5@example.com,Robert Brown,1997-09-09,standard
+user6,secure789,user6@example.com,Lisa White,1985-12-30,admin
