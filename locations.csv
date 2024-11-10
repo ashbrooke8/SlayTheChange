@@ -1,25 +1,25 @@
-id,name,type,address,description,tags,city,price,dislikes,favorites
-1,Starbucks,Cafe,123 Main St,A cozy cafe with great coffee.,"Accessible, LGBTQ+, Eco-Friendly",Calgary,$$,20,120
-2,Second Cup,Cafe,456 Elm St,Popular for light snacks and desserts.,"Accessible, Sensory-Friendly, Eco-Friendly",Calgary,$,15,85
-3,Urban Outfitters,Clothing Store,789 Oak St,Trendy clothes for young adults.,"Body Positive, LGBTQ+, Eco-Friendly",Calgary,$$$,30,200
-4,The Women's Collective Boutique,Clothing Store,101 Maple St,A boutique focused on women's fashion and empowerment.,"Women-Centered, Accessible, Body Positive",Calgary,$$$,10,150
-5,Happy Bean,Cafe,202 Birch St,A calm and relaxing place to enjoy your coffee.,"Sensory-Friendly, All-Gender Bathrooms, LGBTQ+",Calgary,$$,25,95
-6,Eco Grocers,Grocery Store,303 Pine St,An environmentally conscious grocery store.,"Eco-Friendly, Accessible",Calgary,$$,5,180
-9,Peaceful Minds,Cafe,606 Fir St,A cafe designed for people needing a sensory-friendly environment.,"Sensory-Friendly, Accessible",Calgary,$,18,110
-10,The Green Planet,Restaurant,707 Spruce St,Eco-friendly vegan restaurant committed to sustainability.,"Eco-Friendly, LGBTQ+, Accessible, All-Gender Bathrooms",Calgary,$$$,22,175
-12,Open Heart Cafe,Cafe,909 Magnolia St,"A welcoming place for everyone, with an LGBTQ+ focus.","LGBTQ+, All-Gender Bathrooms, Accessible",Calgary,$$,19,125
-15,Planet Thrift,Clothing Store,1212 Daisy St,Second-hand store promoting sustainable clothing options.,"Eco-Friendly, Body Positive, Accessible",Calgary,$,9,105
-16,Urban Outfitters,Clothing Store,123 Fashion St,Trendy clothes for young adults,Body Positive|LGBTQ+|Eco-Friendly,,$$$,25,220
-17,H&M,Clothing Store,456 Style Ave,Affordable fashion for everyone,Accessible|Eco-Friendly,,$,30,180
-18,Zara,Clothing Store,789 Market Blvd,Fashion-forward styles and basics,Body Positive|Eco-Friendly,,$$,40,210
-19,Goodwill,Clothing Store,202 Charity Dr,Second-hand clothing and home goods,Body Positive|Accessible|Eco-Friendly,,$,10,100
-20,Eco Grocers,Grocery Store,123 Pine St,An environmentally conscious grocery store,Accessible|Eco-Friendly,,$$,8,180
-21,Nature's Basket,Grocery Store,456 Harvest Blvd,Organic and sustainable produce with community focus,Accessible|Eco-Friendly,,$$,10,150
-22,The Green Market,Grocery Store,789 Fresh Ave,"Locally sourced fruits, vegetables, and dairy products",Accessible|Eco-Friendly|LGBTQ+,,$$,7,145
-23,Budget Grocers,Grocery Store,101 Savings Rd,Affordable groceries for everyday needs,Accessible|Body Positive,,$,20,175
-24,Rainbow Foods,Grocery Store,202 Color Dr,Inclusive grocery store with a focus on diversity,LGBTQ+|Body Positive|Accessible,,$$,5,165
-25,The Green Planet,Restaurant,123 Spruce St,Eco-friendly vegan restaurant committed to sustainability,Accessible|LGBTQ+|Eco-Friendly|All-Gender Bathrooms,,$$$,10,175
-26,Vegan Delights,Restaurant,456 Herb St,Vegan food with locally-sourced ingredients,Accessible|Eco-Friendly,,$$,5,200
-27,Happy Diner,Restaurant,789 Comfort Blvd,Family-friendly diner with comfort food favorites,Accessible|Body Positive,,$,25,180
-28,Rainbow Eatery,Restaurant,101 Unity Ave,Inclusive menu catering to all dietary preferences,LGBTQ+|Accessible|Body Positive,,$$,15,150
-29,Nature's Plate,Restaurant,202 Healthy Way,Plant-based dishes with a health-focused approach,Women-Centered|Eco-Friendly|Accessible,,$$,8,140
+id,name,type,address,description,tags,city,price,dislikes,favorites, image
+1,Starbucks,Cafe,123 Main St,A cozy cafe with great coffee.,"Accessible, LGBTQ+, Eco-Friendly",Calgary,$$,20,120,images/locations/starbucks.jpg
+2,Second Cup,Cafe,456 Elm St,Popular for light snacks and desserts.,"Accessible, Sensory-Friendly, Eco-Friendly",Calgary,$,15,85,images/locations/starbucks.jpg
+3,Urban Outfitters,Clothing Store,789 Oak St,Trendy clothes for young adults.,"Body Positive, LGBTQ+, Eco-Friendly",Calgary,$$$,30,200,images/locations/starbucks.jpg
+4,The Women's Collective Boutique,Clothing Store,101 Maple St,A boutique focused on women's fashion and empowerment.,"Women-Centered, Accessible, Body Positive",Calgary,$$$,10,150,images/locations/starbucks.jpg
+5,Happy Bean,Cafe,202 Birch St,A calm and relaxing place to enjoy your coffee.,"Sensory-Friendly, All-Gender Bathrooms, LGBTQ+",Calgary,$$,25,95,images/locations/starbucks.jpg
+6,Eco Grocers,Grocery Store,303 Pine St,An environmentally conscious grocery store.,"Eco-Friendly, Accessible",Calgary,$$,5,180,images/locations/starbucks.jpg
+9,Peaceful Minds,Cafe,606 Fir St,A cafe designed for people needing a sensory-friendly environment.,"Sensory-Friendly, Accessible",Calgary,$,18,110,images/locations/starbucks.jpg
+10,The Green Planet,Restaurant,707 Spruce St,Eco-friendly vegan restaurant committed to sustainability.,"Eco-Friendly, LGBTQ+, Accessible, All-Gender Bathrooms",Calgary,$$$,22,175,images/locations/starbucks.jpg
+12,Open Heart Cafe,Cafe,909 Magnolia St,"A welcoming place for everyone, with an LGBTQ+ focus.","LGBTQ+, All-Gender Bathrooms, Accessible",Calgary,$$,19,125,images/locations/starbucks.jpg
+15,Planet Thrift,Clothing Store,1212 Daisy St,Second-hand store promoting sustainable clothing options.,"Eco-Friendly, Body Positive, Accessible",Calgary,$,9,105,images/locations/starbucks.jpg
+16,Urban Outfitters,Clothing Store,123 Fashion St,Trendy clothes for young adults,Body Positive|LGBTQ+|Eco-Friendly,,$$$,25,220,images/locations/starbucks.jpg
+17,H&M,Clothing Store,456 Style Ave,Affordable fashion for everyone,Accessible|Eco-Friendly,,$,30,180,images/locations/starbucks.jpg
+18,Zara,Clothing Store,789 Market Blvd,Fashion-forward styles and basics,Body Positive|Eco-Friendly,,$$,40,210,images/locations/starbucks.jpg
+19,Goodwill,Clothing Store,202 Charity Dr,Second-hand clothing and home goods,Body Positive|Accessible|Eco-Friendly,,$,10,100,images/locations/starbucks.jpg
+20,Eco Grocers,Grocery Store,123 Pine St,An environmentally conscious grocery store,Accessible|Eco-Friendly,,$$,8,180,images/locations/starbucks.jpg
+21,Nature's Basket,Grocery Store,456 Harvest Blvd,Organic and sustainable produce with community focus,Accessible|Eco-Friendly,,$$,10,150,images/locations/starbucks.jpg
+22,The Green Market,Grocery Store,789 Fresh Ave,"Locally sourced fruits, vegetables, and dairy products",Accessible|Eco-Friendly|LGBTQ+,,$$,7,145,images/locations/starbucks.jpg
+23,Budget Grocers,Grocery Store,101 Savings Rd,Affordable groceries for everyday needs,Accessible|Body Positive,,$,20,175,images/locations/starbucks.jpg
+24,Rainbow Foods,Grocery Store,202 Color Dr,Inclusive grocery store with a focus on diversity,LGBTQ+|Body Positive|Accessible,,$$,5,165,images/locations/starbucks.jpg
+25,The Green Planet,Restaurant,123 Spruce St,Eco-friendly vegan restaurant committed to sustainability,Accessible|LGBTQ+|Eco-Friendly|All-Gender Bathrooms,,$$$,10,175,images/locations/starbucks.jpg
+26,Vegan Delights,Restaurant,456 Herb St,Vegan food with locally-sourced ingredients,Accessible|Eco-Friendly,,$$,5,200,images/locations/starbucks.jpg
+27,Happy Diner,Restaurant,789 Comfort Blvd,Family-friendly diner with comfort food favorites,Accessible|Body Positive,,$,25,180,images/locations/starbucks.jpg
+28,Rainbow Eatery,Restaurant,101 Unity Ave,Inclusive menu catering to all dietary preferences,LGBTQ+|Accessible|Body Positive,,$$,15,150,images/locations/starbucks.jpg
+29,Nature's Plate,Restaurant,202 Healthy Way,Plant-based dishes with a health-focused approach,Women-Centered|Eco-Friendly|Accessible,,$$,8,140,images/locations/starbucks.jpg

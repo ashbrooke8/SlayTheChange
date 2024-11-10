@@ -11,6 +11,11 @@ $selectedTags = isset($_GET['tags']) && is_array($_GET['tags']) ? $_GET['tags'] 
 if (($handle = fopen($csvFile, "r")) !== false) {
   $header = fgetcsv($handle); // Read the header line
   while (($row = fgetcsv($handle)) !== false) {
+    // Skip rows that do not have the same number of columns as the header
+    if (count($header) != count($row)) {
+      continue;
+    }
+
     // Convert CSV row to an associative array
     $location = array_combine($header, $row);
 
@@ -33,6 +38,21 @@ if (($handle = fopen($csvFile, "r")) !== false) {
   }
   fclose($handle);
 }
+
+// Image mapping array to associate each location id with an image
+$imageMap = [
+  '1' => 'images/locations/starbucks.jpg',
+  '2' => 'images/locations/secondcup.jpg',
+  '3' => 'images/locations/urbanoutfitters.jpg',
+  '4' => 'images/locations/womenscollective.jpg',
+  '5' => 'images/locations/happybean.jpg',
+  '6' => 'images/locations/ecogrocers.jpg',
+  '9' => 'images/locations/peacefulminds.jpg',
+  '10' => 'images/locations/greenplanet.jpg',
+  '12' => 'images/locations/openheartcafe.jpg',
+  '15' => 'images/locations/planetthrift.jpg',
+  // Add more mappings here if needed
+];
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +82,7 @@ if (($handle = fopen($csvFile, "r")) !== false) {
   <div class="content-box">
     <div class="filter-area">
       <p id="filter-results">Filter Results</p>
-      <form method="get" action="" id="filter-form">
+      <form method="get" action="locations.php" id="filter-form">
         <input type="hidden" name="search" value="<?php echo htmlspecialchars($searchTerm); ?>">
         <label>
           <input type="checkbox" name="tags[]" value="Women-Centered" <?php echo in_array('Women-Centered', $selectedTags) ? 'checked' : ''; ?>> Women-Centered
@@ -92,11 +112,17 @@ if (($handle = fopen($csvFile, "r")) !== false) {
 
     <div class="results">
       <?php if (!empty($locations)): ?>
-        <p id="result-count"><?php echo count(value: $locations); ?> Results found</p>
+        <p id="result-count"><?php echo count($locations); ?> Results found</p>
         <?php foreach ($locations as $location): ?>
           <div class="result">
             <div class="left-content">
-              <img src="images/default.jpg" alt="Location Image" id="result-image"> <!-- Placeholder image -->
+              <!-- Use the image mapping to determine the image to show -->
+              <?php
+              $locationId = $location['id'];
+              $imagePath = isset($imageMap[$locationId]) ? $imageMap[$locationId] : 'images/default.jpg';
+              ?>
+              <img id="result-image" src="<?php echo htmlspecialchars($imagePath); ?>" alt="Location Image">
+
               <div class="rating">
                 <p>♡ <?php echo htmlspecialchars($location['favorites']); ?></p>
                 <p>👎 <?php echo htmlspecialchars($location['dislikes']); ?></p>
