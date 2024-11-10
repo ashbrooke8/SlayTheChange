@@ -11,12 +11,11 @@ body {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 84px;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
 }
 
 img {
@@ -35,9 +34,9 @@ img {
 }
 
 #site-name {
-    font-family: "baloo";
-    font-size: 40px;
-    color: #2D359D;
+  font-family: "baloo";
+  font-size: 40px;
+  color: #2d359d;
 }
 
 #search-form {
@@ -58,7 +57,8 @@ img {
 }
 
 #search-button,
-#login-button {
+#login-button,
+#filter-button {
   height: 60px;
   font-size: 24px;
   margin-left: 5px;
@@ -72,6 +72,8 @@ img {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out;
   transition-delay: 0.1s;
+  display: flexbox;
+  justify-content: center;
 }
 
 #login-button {
@@ -79,10 +81,11 @@ img {
 }
 
 #search-button:hover,
-#login-button:hover {
-  background-color: #2d359d; /* Dark background on hover */
-  color: #d3d5f8; /* Light text color on hover */
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+#login-button:hover,
+#filter-button:hover {
+  background-color: #2d359d;
+  color: #d3d5f8;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 #result-count {
@@ -112,6 +115,23 @@ img {
 
 #filter-results {
   font-weight: bold;
+}
+
+.filter-tag {
+  display: block;
+  background-color: #d3d5f8; /* Dim color to start */
+  color: #2d359d;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-tag.selected {
+  background-color: #2d359d;
+  color: #ffffff;
 }
 
 ul {
@@ -224,67 +244,97 @@ ul li {
 }
 
 @media only screen and (max-width: 750px) {
-    #site-name{
-        font-size:30px;
-    }
-    #search-button,#login-button{
-        padding: 6px 10px; 
-        font-size: 12px; 
-        border-radius: 8px;
-    }
-    #logo-container{
-        display:none;
-    }
+  #site-name {
+    font-size: 30px;
+  }
+  #search-button,
+  #login-button {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  #logo-container {
+    display: none;
+  }
 
-    #search-form{
-        width:30%;
-    }
+  #search-form {
+    width: 30%;
+  }
 
-    #result-count{
-        display:none;
-    }
-    .filter-area{
-        display:none;
-    }
+  #result-count {
+    display: none;
+  }
+  .filter-area {
+    display: none;
+  }
 
-    .results {
-        flex-direction: column; /* Stacks results vertically on small screens */
-    }
-    .result {
-        display: flex;
-        flex-direction: column; /* Aligns content within each result in a column */
-        gap: 15px;
-        padding: 10px;
-    }
+  .results {
+    flex-direction: column; /* Stacks results vertically on small screens */
+  }
+  .result {
+    display: flex;
+    flex-direction: column; /* Aligns content within each result in a column */
+    gap: 15px;
+    padding: 10px;
+  }
 
-    .left-content, .right-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .left-content,
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    #result-image {
-        width: 100%; /* Full width on smaller screens */
-        max-width: 250px; /* Optional: limit max width */
-    }
+  #result-image {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 250px; /* Optional: limit max width */
+  }
 
-    .rating {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding-top: 10px;
-    }
+  .rating {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 10px;
+  }
 
-    .name-money, .tags, .review {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        flex-wrap: wrap;
-    }
+  .name-money,
+  .tags,
+  .review {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
 
-    .tag {
-        font-size: 14px;
-        padding: 5px;
-    }
+  .tag {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  border: solid 2px #c1c4fc;
+  color: #adb0ed;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+label:hover {
+  background-color: #2d359d;
+  color: #ffffff;
+  border: solid 2px #2d359d;
+}
+
+/* Keep the hover style when the checkbox is checked */
+input[type="checkbox"]:checked + label,
+label input[type="checkbox"]:checked {
+  background-color: #2d359d;
+  color: #ffffff;
+  border: solid 2px #2d359d;
 }

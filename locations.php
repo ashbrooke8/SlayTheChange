@@ -1,37 +1,29 @@
 <?php
-// Define the path for the CSV file
 $csvFile = 'locations.csv';
 $locations = [];
 
-// Check if the search form is submitted
 $searchTerm = isset($_GET['search']) ? strtolower(trim($_GET['search'])) : '';
 $selectedTags = isset($_GET['tags']) && is_array($_GET['tags']) ? $_GET['tags'] : [];
 
-// Open the CSV file and parse its contents
 if (($handle = fopen($csvFile, "r")) !== false) {
-  $header = fgetcsv($handle); // Read the header line
+  $header = fgetcsv($handle);
   while (($row = fgetcsv($handle)) !== false) {
-    // Skip rows that do not have the same number of columns as the header
     if (count($header) != count($row)) {
       continue;
     }
 
-    // Convert CSV row to an associative array
     $location = array_combine($header, $row);
 
-    // Check if the location matches the search term in the name or type, if specified
     $locationType = strtolower($location['type']);
     $locationName = strtolower($location['name']);
     $matchesSearchTerm = empty($searchTerm) ||
       stripos($locationName, $searchTerm) !== false ||
       stripos($locationType, $searchTerm) !== false;
 
-    // Check if the location matches the selected tags
     $matchesTags = empty($selectedTags) || array_reduce($selectedTags, function ($carry, $tag) use ($location) {
       return $carry && stripos($location['tags'], $tag) !== false;
     }, true);
 
-    // Add location if it matches both the search term and tags
     if ($matchesSearchTerm && $matchesTags) {
       $locations[] = $location;
     }
@@ -39,7 +31,6 @@ if (($handle = fopen($csvFile, "r")) !== false) {
   fclose($handle);
 }
 
-// Image mapping array to associate each location id with an image
 $imageMap = [
   '1' => 'images/locations/starbucks.jpg',
   '2' => 'images/locations/second-cup.jpg',
@@ -76,6 +67,7 @@ $imageMap = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Location Results</title>
   <link rel="stylesheet" href="css/results.css">
+
 </head>
 
 <body>
@@ -129,7 +121,6 @@ $imageMap = [
         <?php foreach ($locations as $location): ?>
           <div class="result">
             <div class="left-content">
-              <!-- Use the image mapping to determine the image to show -->
               <?php
               $locationId = $location['id'];
               $imagePath = isset($imageMap[$locationId]) ? $imageMap[$locationId] : 'images/default.jpg';
