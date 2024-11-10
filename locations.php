@@ -73,7 +73,7 @@ $imageMap = [
       <button type="submit" id="search-button">Search</button>
     </form>
     <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
-      <p>Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! <a href="login.php" id="logout-button">Log out</a></p>
+      <p>Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! <a href="logout.php" id="logout-button">Log out</a></p>
     <?php else: ?>
       <a id="login-button" href="login.php">Login</a>
     <?php endif; ?>
