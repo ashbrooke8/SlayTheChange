@@ -4,7 +4,7 @@ body {
   background-image: url("../images/Background-with-decor.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
 }
 
 h1 {
@@ -89,4 +89,20 @@ img {
 
 .dropdown-select option {
   color: #333;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .login-button,
+  .login-button:hover {
+    font-size: 15px;
+  }
+
 }
