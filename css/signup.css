@@ -27,8 +27,9 @@ nav {
 }
 
 #site-name {
-    margin: 0;
-    margin-left: 20px;
+    font-family: "baloo";
+    font-size: 40px;
+    color: #2D359D;
 }
 
 nav a {
@@ -126,7 +127,25 @@ nav a:visited {
     color: #7E83C1;
 }
 
-@media (max-width: 750px) {
+
+@media only screen and (max-width: 750px) {
+    #site-name {
+      font-size: 30px;
+    }
+    
+  
+    .login-button,
+    .login-button:hover {
+      font-size: 15px;
+    }
+
+    form {
+        width: 90%; 
+        padding: 20px;
+    }
+}
+
+/*@media (max-width: 750px) {
     .signup-box {
         width: 90%;
         height: auto;
