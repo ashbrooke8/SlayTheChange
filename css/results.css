@@ -30,7 +30,7 @@ nav {
     height: 70px;
 }
 
-#name {
+#site-name {
     font-family: "baloo";
     font-size: 64px;
     color: #2D359D;
@@ -108,15 +108,15 @@ nav {
 }
 
 ul {
-    list-style-type: none;        /* Removes the bullet points */
-    padding: 0;                   /* Removes default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-    background-color: #D3D5F8;    /* Sets the background color */
-    padding: 10px 15px;           /* Adds padding for spacing */
-    margin: 5px 0;                /* Adds space between list items */
-    border-radius: 20px;           /* Rounds the corners */
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
 }
 
 .results {
@@ -141,11 +141,30 @@ ul li {
 .name-money {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#name {
+    margin-bottom: 0px;
+}
+
+#money {
+    margin-bottom: 0px;
 }
 
 .tags {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
 }
 
 .rating {
@@ -156,4 +175,7 @@ ul li {
 .review {
     display: flex;
     flex-direction: row;
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    border-radius: 15px;
 }
