@@ -63,7 +63,8 @@ img {
 
 #search-button,
 #login-button,
-#filter-button {
+#filter-button,
+#logout-button {
   height: 60px;
   font-size: 24px;
   margin-left: 5px;
@@ -88,7 +89,8 @@ img {
 
 #search-button:hover,
 #login-button:hover,
-#filter-button:hover {
+#filter-button:hover,
+#logout-button:hover {
   background-color: #2d359d;
   color: #d3d5f8;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
@@ -368,3 +370,13 @@ label input[type="checkbox"]:checked {
   color: white;
   box-shadow: 0 0 5px rgba(193, 196, 252, 0.6);
 } */
+
+#welcome-message {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
