@@ -221,16 +221,18 @@ label {
 }
 
 @media only screen and (max-width: 750px) {
-    h1 {
-      font-size: 50px;
+    #site-name {
+      font-size: 30px;
     }
-  
-    p {
-      font-size: 20px;
-    }
+    
   
     .login-button,
     .login-button:hover {
       font-size: 15px;
+    }
+
+    form {
+        width: 90%; 
+        padding: 20px;
     }
   }
