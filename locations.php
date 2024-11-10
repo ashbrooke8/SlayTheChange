@@ -92,7 +92,7 @@ if (($handle = fopen($csvFile, "r")) !== false) {
 
     <div class="results">
       <?php if (!empty($locations)): ?>
-        <p id="result-count"><?php echo count($locations); ?> Results found</p>
+        <p id="result-count"><?php echo count(value: $locations); ?> Results found</p>
         <?php foreach ($locations as $location): ?>
           <div class="result">
             <div class="left-content">

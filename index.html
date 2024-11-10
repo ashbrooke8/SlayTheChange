@@ -23,8 +23,8 @@
         const selectedValue = dropdown.value;
 
         if (selectedValue) {
-          // Redirect to locations.php with the appropriate CSV file as a query parameter
-          window.location.href = `locations.php?file=${selectedValue}.csv`;
+          // Redirect to locations.php with the selected type as a search query parameter
+          window.location.href = `locations.php?search=${selectedValue}`;
         }
       }
 
@@ -58,9 +58,9 @@
         <select class="dropdown-select">
           <option value="" disabled selected>Choose a location...</option>
           <option value="cafe">Cafe</option>
-          <option value="clothing-store">Clothing Store</option>
+          <option value="clothing store">Clothing Store</option>
           <option value="restaurant">Restaurant</option>
-          <option value="grocery-store">Grocery Store</option>
+          <option value="grocery store">Grocery Store</option>
         </select>
       </div>
     </div>
