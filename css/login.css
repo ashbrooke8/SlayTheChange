@@ -215,3 +215,24 @@ label {
 #questions p {
     font-weight: bold;
 }
+
+#link{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+    #site-name {
+      font-size: 30px;
+    }
+    
+  
+    .login-button,
+    .login-button:hover {
+      font-size: 15px;
+    }
+
+    form {
+        width: 90%; 
+        padding: 20px;
+    }
+  }
