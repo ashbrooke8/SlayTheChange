@@ -30,9 +30,11 @@ p {
   font-family: "abeezee";
   font-size: 25px;
   text-align: center;
-
 }
 
+a {
+  text-decoration: none;
+}
 
 img {
   width: 200px;
@@ -57,7 +59,6 @@ img {
   cursor: pointer;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out;
-  transition-delay: 0.1s;
 }
 
 .login-button:hover {
@@ -119,5 +120,4 @@ img {
   .login-button:hover {
     font-size: 15px;
   }
-
 }

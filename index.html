@@ -23,12 +23,10 @@
         const selectedValue = dropdown.value;
 
         if (selectedValue) {
-          // Redirect to locations.php with the selected type as a search query parameter
           window.location.href = `locations.php?search=${selectedValue}`;
         }
       }
 
-      // Attach the function to the dropdown change event
       document.addEventListener("DOMContentLoaded", function () {
         const dropdown = document.querySelector(".dropdown-select");
         dropdown.addEventListener("change", handleDropdownChange);
@@ -37,8 +35,8 @@
   </head>
   <body>
     <div class="navigation">
-      <button class="login-button">Login</button>
-      <button class="login-button">Register</button>
+      <a class="login-button" href="login.html">Login</a>
+      <a class="login-button" href="signup.html">Register</a>
     </div>
     <div class="site-name">
       <img src="images/logo.png" />
