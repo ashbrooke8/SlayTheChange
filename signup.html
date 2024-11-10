@@ -17,19 +17,21 @@
         </div>
     </nav>
     <div class="signup-box">
-        <p id="boxtitle">SIGN UP</p>
-        <form method="post">
-            <div class="name">
-                <p class="entertitle">Name</p>
-                <input type="text" name="entername" placeholder="Enter your name">
-            </div>
-            <div class="username">
-                <p class="entertitle">Username</p>
-                <input type="text" name="enterusername" placeholder="Enter your username">
-            </div>
-            <div class="password">
-                <p class="entertitle">Password</p>
-                <input type="text" name="enterpassword" placeholder="Enter your password">
+        <form action="/action_page.php" method="post">
+            <p id="boxtitle">SIGN UP</p>
+            <div class="form-fields">
+                <div class="form-group">
+                    <p class="entertitle">Name</p>
+                    <input type="text" name="entername" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <p class="entertitle">Username</p>
+                    <input type="text" name="enterusername" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <p class="entertitle">Password</p>
+                    <input type="text" name="enterpassword" placeholder="Enter your password">
+                </div>
             </div>
             <input type="submit" value="Create Account" id="create-acc-button">
         </form>

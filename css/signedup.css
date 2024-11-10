@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
+body {
+    background-image: url("../images/background-with-decor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: ABeeZee;
+    color: #2D359D;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+}
+
+#site-name {
+    font-family: "baloo";
+    font-size: 40px;
+    color: #2D359D;
+}
+
+
+
+

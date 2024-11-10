@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 20px;
     height: 84px;
 }
@@ -22,7 +22,9 @@ a {
 
 #logo-container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-between;
 }
 
 #logo {
@@ -31,27 +33,21 @@ a {
     margin: 0;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 #site-name {
     font-family: "baloo";
     font-size: 40px;
     color: #2D359D;
-}
-
-nav a {
-    font-family: "baloo";
-    font-size: 40pt;
-    text-decoration: none;
-    display: flex;
-    margin: 0;
-}
-
-nav a:visited {
-    color: #2D359D;
+    margin: auto;
+    margin-top: 10px;
 }
 
 #boxtitle {
     font-family: baloo;
-    font-size: 40pt;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -63,13 +59,13 @@ nav a:visited {
     justify-content: center;
     display: flex;
     align-items: center;
-    width: 800px;
-    height: 650px;
+    width: 50%;
+    height: 80%;
     padding: 15px 20px;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 .signup-box a {
@@ -86,7 +82,7 @@ nav a:visited {
 }
 
 .signup-box .entertitle {
-    font-size: 18pt;
+    font-size: 18px;
     margin: 10px;
     font-weight: bold;
 }
@@ -96,19 +92,23 @@ nav a:visited {
     color: #2D359D;
     height: 50px;
     margin: 0;
+    max-width: 400px;
 }
 
-
-.signup-box input[type=text] {
+input[type=text] {
+    width: 100%;
+    padding: 12px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    border: solid;
-    border-color: #2D359D;
-    font-size: 16pt;
-    padding-left: 15px;
-    width: 585px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #7E83C1;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
     border-width: 1.5px;
+}
+
+input[type="text"]:focus {
+    border-color: #2D359D;
 }
 
 .signup-box input[type=submit] {
@@ -116,12 +116,11 @@ nav a:visited {
     border-radius: 10px;
     background-color: #2D359D;
     color: white;
-    font-size: 23pt;
+    font-size: 18px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 15px;
-    width: 600px;
-    height: 60px;
+    width: 100%;
 }
 
 #create-acc-button:hover {
@@ -132,20 +131,24 @@ nav a:visited {
     color: #7E83C1;
 }
 
+#form-fields {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 @media only screen and (max-width: 750px) {
-    #site-name {
-      font-size: 30px;
-    }
-    
-  
+
     .login-button,
     .login-button:hover {
-      font-size: 15px;
+        font-size: 15px;
     }
 
     form {
-        width: 90%; 
+        width: 90%;
         padding: 20px;
     }
 }
@@ -175,4 +178,3 @@ nav a:visited {
 
     }
 }
-
