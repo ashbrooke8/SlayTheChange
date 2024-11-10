@@ -158,6 +158,7 @@ $imageMap = [
               </div>
               <div class="review">
                 <p>"Read Reviews"</p>
+                <p><a href="login.php" id="to-login"> Write a Review</a><p>
               </div>
             </div>
           </div>
