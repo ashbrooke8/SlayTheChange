@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
+body {
+    background-image: url("../images/Background-with-decor.png");
+    font-family: ABeeZee;
+    color: #2D359D;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    height: 84px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+    margin: 0;
+}
+
+#site-name {
+    margin: 0;
+    margin-left: 20px;
+}
+
+nav a {
+    font-family: "baloo";
+    font-size: 40pt;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+}
+
+nav a:visited {
+    color: #2D359D;
+}
+
+.signup-box {
+    justify-content: center;
+    background-color: #E2EAFB;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 700px;
+}
+
+#boxtitle {
+    font-family: baloo;
+    font-size: 30pt;
+}
+
+.signup-box .entertitle {
+    font-size: 20pt;
+}
+
+input {
+    font-family: ABeeZee;
+    border-radius: 15px;
+    border-color: solid #2D359D;
+    height: 50px;
+}

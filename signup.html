@@ -12,13 +12,15 @@
 <body>
     <nav>
         <div id="logo-container">
-            <img src="images\logo.png" alt="logo" id="logo">
-            <p id="site-name">Hidden Havens</p>
+            <a href="index.html">
+                <img src="images\logo.png" alt="logo" id="logo">
+                <p id="site-name">Hidden Havens</p>
+            </a>
         </div>
     </nav>
     <div class="signup-box">
         <p id="boxtitle">SIGN UP</p>
-        <form>
+        <form method="post">
             <div class="name">
                 <p class="entertitle">Name</p>
                 <input type="text" name="entername" placeholder="Enter your name">
@@ -31,9 +33,12 @@
                 <p class="entertitle">Password</p>
                 <input type="text" name="enterpassword" placeholder="Enter your password">
             </div>
+            <input type="submit" value="Create Account" id="create-acc-button">
         </form>
-        <button id="create-acc-button">Create Account</button>
-        <p href="" id="alreadyhave">Already have an account?</p>
+
+        <a href="login.html">
+            <p id="alreadyhave">Already have an account?</p>
+        </a>
     </div>
 
 </body>
