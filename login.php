@@ -66,6 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="images/google.png" alt="googlelogo" id="googlelogo">
         <p id="sign-in-google">&nbsp;&nbsp;Sign in with Google</p>
       </div>
+      <hr>
     </div>
 
     <div id="form-fields">

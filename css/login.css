@@ -15,13 +15,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 84px;
-    
 }
 
 a {
     text-decoration: none;
-  }
-  
+}
+
 
 #logo-container {
     display: flex;
@@ -40,7 +39,7 @@ a {
     color: #2D359D;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     background-color: rgba(226, 234, 251, 0.75);
@@ -50,14 +49,16 @@ form{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px; /* Reduced padding */
-    gap: 15px; /* Adjust gap if needed */
+    padding: 30px;
+    /* Reduced padding */
+    gap: 15px;
+    /* Adjust gap if needed */
     margin-bottom: 20px;
     width: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-#log-in{
+#log-in {
     font-family: "baloo";
     font-size: 40px;
     color: #2D359D;
@@ -65,19 +66,23 @@ form{
     text-align: center;
 }
 
-#goog-container{
+#goog-container {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    background-color: #ffffff; /* White background for Google sign-in */
-    border-radius: 10px; /* Rounded corners */
-    padding: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    justify-content: center;
+    background-color: #ffffff;
+    /* White background for Google sign-in */
+    border-radius: 10px;
+    /* Rounded corners */
+    /* padding: 12px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
     font-family: "ABeeZee";
     font-size: 18px;
     color: #2D359D;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
 }
 
 #top-container {
@@ -86,51 +91,73 @@ form{
 }
 
 #goog-container:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    /* Slightly larger shadow on hover */
 }
 
-#googlelogo{
+#googlelogo {
     width: 20px;
     height: 20px;
     margin-right: 8px;
 }
 
+hr {
+    border: 1px solid #1A237E;
+    margin: 10px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Input field styling */
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 12px;
     font-size: 16px;
     font-family: "ABeeZee";
-    border: 2px solid #cccccc; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #cccccc;
+    /* Light gray border */
+    border-radius: 10px;
+    /* Rounded corners */
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 15px; /* Spacing between input fields */
-    transition: border-color 0.3s ease; /* Smooth transition on focus */
+    margin-bottom: 15px;
+    /* Spacing between input fields */
+    transition: border-color 0.3s ease;
+    /* Smooth transition on focus */
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #2D359D; /* Blue border on focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #2D359D;
+    /* Blue border on focus */
 }
 
 /* Sign-in button styling */
-button[type="submit"], .sign-in-button {
+button[type="submit"],
+.sign-in-button {
     padding: 12px 0;
     width: 100%;
     font-size: 18px;
     font-family: "Baloo";
     color: #ffffff;
-    background-color: #2D359D; /* Blue background */
+    background-color: #2D359D;
+    /* Blue background */
     border: none;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
+    /* Rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover transition */
 }
 
-button[type="submit"]:hover, .sign-in-button:hover {
-    background-color: #1A237E; /* Darker shade of blue on hover */
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+button[type="submit"]:hover,
+.sign-in-button:hover {
+    background-color: #1A237E;
+    /* Darker shade of blue on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
 }
 
 /* Link styling within the form */
@@ -139,11 +166,13 @@ form a {
     font-size: 16px;
     color: #2D359D;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
 }
 
 form a:hover {
-    color: #1A237E; /* Darker color on hover */
+    color: #1A237E;
+    /* Darker color on hover */
 }
 
 /* Aligning links at the bottom */
@@ -151,7 +180,8 @@ form a:hover {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    margin-top: 20px; /* Space above links */
+    margin-top: 20px;
+    /* Space above links */
 }
 
 /* Style for the form fields container */
@@ -161,14 +191,17 @@ form a:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between each form group */
+    gap: 20px;
+    /* Space between each form group */
 }
 
 /* Flex container for each label and input pair */
 .form-group {
     display: flex;
-    flex-direction: column; /* Stack label above the input */
-    align-items: flex-start; /* Align label and input to the left */
+    flex-direction: column;
+    /* Stack label above the input */
+    align-items: flex-start;
+    /* Align label and input to the left */
 }
 
 /* Label styling */
@@ -176,13 +209,16 @@ form a:hover {
     font-family: "ABeeZee", sans-serif;
     color: #2D359D;
     font-size: 16px;
-    margin-bottom: 5px; /* Space between label and input */
-    text-align: left; /* Ensure the text is aligned to the left */
+    margin-bottom: 5px;
+    /* Space between label and input */
+    text-align: left;
+    /* Ensure the text is aligned to the left */
 }
 
 /* Input styling */
 .form-group input {
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     padding: 10px;
     font-size: 16px;
     border: 2px solid #cccccc;
@@ -220,23 +256,23 @@ label {
     font-weight: bold;
 }
 
-#link{
+#link {
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 750px) {
     #site-name {
-      font-size: 30px;
+        font-size: 30px;
     }
-    
-  
+
+
     .login-button,
     .login-button:hover {
-      font-size: 15px;
+        font-size: 15px;
     }
 
     form {
-        width: 90%; 
+        width: 90%;
         padding: 20px;
     }
-  }
+}
