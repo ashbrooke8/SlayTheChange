@@ -11,13 +11,25 @@ h1 {
   font-family: "baloo";
   font-size: 75px;
   color: #2d359d;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: "abeezee";
+  font-size: 25px;
+  text-align: center;
+  color: #2d359d;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 p {
   font-family: "abeezee";
   font-size: 25px;
   text-align: center;
+
 }
+
 
 img {
   width: 200px;
