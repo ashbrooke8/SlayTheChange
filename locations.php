@@ -73,8 +73,8 @@ $imageMap = [
 <body>
   <nav>
     <div id="logo-container">
-      <img src="images/logo.png" alt="logo" id="logo">
-      <p id="site-name">Hidden Havens</p>
+    <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a> 
+    <a href="index.html" id="site-name">Hidden Havens</a>
     </div>
     <form method="get" action="locations.php" id="search-form">
       <input type="search" name="search" placeholder="Search (e.g. Cafe, Starbucks)..." id="search-bar"

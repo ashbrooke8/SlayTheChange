@@ -45,14 +45,15 @@ img {
   top: 10px;
   right: 10px;
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
 .login-button {
   padding: 10px 15px;
   font-family: "baloo";
-  background-color: #d3d5f8;
-  font-size: 20px;
+  /* background-color: #d3d5f8; */
+  background-color: white;
+  font-size: 32px;
   color: #2d359d;
   border: none;
   border-radius: 10px;
@@ -63,7 +64,8 @@ img {
 
 .login-button:hover {
   background-color: #2d359d;
-  color: #d3d5f8;
+  /* color: #d3d5f8; */
+  color: white;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
