@@ -1,60 +1,43 @@
 <?php
-// Database connection
-$servername = "localhost";
-$username = "root";  // Replace with your MySQL username
-$password = "";      // Replace with your MySQL password
-$dbname = "hidden_havens"; // The name of your database
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+$csvFile = "locations.csv"; // Path to your CSV file
 
 $locations = [];
 $selected_tags = [];
 
-// Check if tags are selected and perform query
+// Function to read data from CSV file
+function readCSV($csvFile)
+{
+  $file = fopen($csvFile, 'r');
+  $data = [];
+
+  if ($file !== FALSE) {
+    $headers = fgetcsv($file); // Read the first row as header
+    while (($row = fgetcsv($file)) !== FALSE) {
+      $data[] = array_combine($headers, $row);
+    }
+    fclose($file);
+  }
+
+  return $data;
+}
+
+// Read data from the CSV file
+$locations = readCSV($csvFile);
+
+// Check if tags are selected and filter accordingly
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['tags']) && is_array($_POST['tags']) && !empty($_POST['tags'])) {
   $selected_tags = $_POST['tags'];
 
-  $sql = "SELECT * FROM locations WHERE ";
-  $conditions = [];
-  foreach ($selected_tags as $tag) {
-    $conditions[] = "tags LIKE ?";
-  }
-  $sql .= implode(" AND ", $conditions);
-
-  $stmt = $conn->prepare($sql);
-
-  $like_tags = array_map(function ($tag) {
-    return '%' . $tag . '%';
-  }, $selected_tags);
-
-  $stmt->bind_param(str_repeat('s', count($like_tags)), ...$like_tags);
-  $stmt->execute();
-  $result = $stmt->get_result();
-
-  if ($result && $result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-      $locations[] = $row;
+  // Filter the locations based on selected tags
+  $locations = array_filter($locations, function ($location) use ($selected_tags) {
+    foreach ($selected_tags as $tag) {
+      if (stripos($location['tags'], $tag) === false) {
+        return false; // If one of the selected tags is not in location tags, exclude this location
+      }
     }
-  }
-
-  $stmt->close();
-} else {
-  // If no tags are selected, retrieve all locations
-  $sql = "SELECT * FROM locations";
-  $result = $conn->query($sql);
-
-  if ($result && $result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-      $locations[] = $row;
-    }
-  }
+    return true;
+  });
 }
-
-$conn->close();
 ?>
 
 <!DOCTYPE html>

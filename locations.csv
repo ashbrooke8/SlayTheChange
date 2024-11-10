@@ -1,0 +1,16 @@
+id,name,type,address,description,tags,city,price,dislikes,favorites
+1,Starbucks,Cafe,123 Main St,A cozy cafe with great coffee.,"Accessible, LGBTQ+, Eco-Friendly",Calgary,$$,20,120
+2,Second Cup,Cafe,456 Elm St,Popular for light snacks and desserts.,"Accessible, Sensory-Friendly, Eco-Friendly",Calgary,$,15,85
+3,Urban Outfitters,Clothing Store,789 Oak St,Trendy clothes for young adults.,"Body Positive, LGBTQ+, Eco-Friendly",Calgary,$$$,30,200
+4,The Women's Collective Boutique,Clothing Store,101 Maple St,A boutique focused on women's fashion and empowerment.,"Women-Centered, Accessible, Body Positive",Calgary,$$$,10,150
+5,Happy Bean,Cafe,202 Birch St,A calm and relaxing place to enjoy your coffee.,"Sensory-Friendly, All-Gender Bathrooms, LGBTQ+",Calgary,$$,25,95
+6,Eco Grocers,Grocery Store,303 Pine St,An environmentally conscious grocery store.,"Eco-Friendly, Accessible",Calgary,$$,5,180
+7,Rainbow Bookstore,Bookstore,404 Cedar St,A bookstore celebrating diverse voices and inclusivity.,"LGBTQ+, Accessible, Body Positive",Calgary,$,8,70
+8,Nature's Touch Yoga,Wellness Center,505 Willow St,Yoga studio focusing on health and mindfulness.,"Women-Centered, Accessible, Body Positive, Eco-Friendly",Calgary,$$,12,140
+9,Peaceful Minds,Cafe,606 Fir St,A cafe designed for people needing a sensory-friendly environment.,"Sensory-Friendly, Accessible",Calgary,$,18,110
+10,The Green Planet,Restaurant,707 Spruce St,Eco-friendly vegan restaurant committed to sustainability.,"Eco-Friendly, LGBTQ+, Accessible, All-Gender Bathrooms",Calgary,$$$,22,175
+11,Body Empower Fitness,Gym,808 Poplar St,A fitness space that celebrates all body types.,"Body Positive, Women-Centered, Accessible, LGBTQ+",Calgary,$$,17,130
+12,Open Heart Cafe,Cafe,909 Magnolia St,"A welcoming place for everyone, with an LGBTQ+ focus.","LGBTQ+, All-Gender Bathrooms, Accessible",Calgary,$$,19,125
+13,Wellness for All,Wellness Center,1010 Rosewood St,Community-focused wellness center with all-gender access.,"All-Gender Bathrooms, Accessible, Sensory-Friendly",Calgary,$$,14,90
+14,Empowerment Co-Working,Co-Working Space,1111 Lavender St,Co-working space tailored for women entrepreneurs.,"Women-Centered, Accessible, Body Positive, LGBTQ+",Calgary,$$$,5,160
+15,Planet Thrift,Clothing Store,1212 Daisy St,Second-hand store promoting sustainable clothing options.,"Eco-Friendly, Body Positive, Accessible",Calgary,$,9,105
