@@ -42,15 +42,20 @@ if (($handle = fopen($csvFile, "r")) !== false) {
 // Image mapping array to associate each location id with an image
 $imageMap = [
   '1' => 'images/locations/starbucks.jpg',
-  '2' => 'images/locations/secondcup.jpg',
-  '3' => 'images/locations/urbanoutfitters.jpg',
-  '4' => 'images/locations/womenscollective.jpg',
+  '2' => 'images/locations/second-cup.jpg',
+  '3' => 'images/locations/urban-outfitters.jpg',
+  '4' => 'images/locations/thewomenscollectivebotique.jpg',
   '5' => 'images/locations/happybean.jpg',
   '6' => 'images/locations/ecogrocers.jpg',
-  '9' => 'images/locations/peacefulminds.jpg',
-  '10' => 'images/locations/greenplanet.jpg',
-  '12' => 'images/locations/openheartcafe.jpg',
-  '15' => 'images/locations/planetthrift.jpg',
+  '7' => 'images/locations/peacefulminds.png',
+  '8' => 'images/locations/thegreenplanet.jpg',
+  '9' => 'images/locations/openheartcafe.jpg',
+  '10' => 'images/locations/planetthrift.jpg',
+  '11' => 'images/locations/dynamite.jpg',
+  '12' => 'images/locations/hm.jpg',
+  '13' => 'images/locations/zara.jpg',
+
+
   // Add more mappings here if needed
 ];
 ?>
