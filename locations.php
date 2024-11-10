@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $csvFile = 'new_locations.csv';
 $locations = [];
 
@@ -45,17 +47,6 @@ $imageMap = [
   '11' => 'images/locations/sunshine.jpg',
   '12' => 'images/locations/telusspark.jpg',
   '13' => 'images/locations/sidewalkcitizen.jpg',
-  // '14' => 'images/locations/goodwill.jpg',
-  // '15' => 'images/locations/safeway.jpg',
-  // '16' => 'images/locations/naturesbasket.jpg',
-  // '17' => 'images/locations/thegreenmarket.jpg',
-  // '18' => 'images/locations/budgetgrocers.jpg',
-  // '19' => 'images/locations/rainbowfoods.jpg',
-  // '20' => 'images/locations/bostonpizza.jpg',
-  // '21' => 'images/locations/vegandelights.jpg',
-  // '22' => 'images/locations/happydiner.jpg',
-  // '23' => 'images/locations/rainboweatery.jpg',
-  // '24' => 'images/locations/dennys.jpg',
 ];
 ?>
 
@@ -73,7 +64,7 @@ $imageMap = [
 <body>
   <nav>
     <div id="logo-container">
-      <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a>
+      <a href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
       <a href="index.html" id="site-name">Hidden Havens</a>
     </div>
     <form method="get" action="locations.php" id="search-form">
@@ -81,8 +72,11 @@ $imageMap = [
         value="<?php echo htmlspecialchars($searchTerm); ?>">
       <button type="submit" id="search-button">Search</button>
     </form>
-    <!-- <button id="login-button" href="login.html">Log In</button> -->
-    <a id="login-button" href="login.html">Login</a>
+    <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+      <p>Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! <a href="login.php" id="logout-button">Log out</a></p>
+    <?php else: ?>
+      <a id="login-button" href="login.html">Login</a>
+    <?php endif; ?>
   </nav>
 
   <div class="content-box">
@@ -130,7 +124,6 @@ $imageMap = [
         <button type="submit" id="filter-button">Filter</button>
       </form>
     </div>
-    <!-- </div> -->
 
     <div class="results">
       <?php if (!empty($locations)): ?>
