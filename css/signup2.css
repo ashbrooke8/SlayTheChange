@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
+
+body {
+    background-image: url("../images/background-with-decor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: ABeeZee;
+    color: #2D359D;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+}
+
+#site-name {
+    font-family: "baloo";
+    font-size: 40px;
+    color: #2D359D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(226, 234, 251, 0.75);
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    /* Reduced padding */
+    gap: 15px;
+    /* Adjust gap if needed */
+    margin-bottom: 20px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#boxtitle {
+    font-family: "baloo";
+    font-size: 40px;
+    color: #2D359D;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "ABeeZee";
+    border: 2px solid #cccccc;
+    /* Light gray border */
+    border-radius: 10px;
+    /* Rounded corners */
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    /* Spacing between input fields */
+    transition: border-color 0.3s ease;
+    /* Smooth transition on focus */
+}
+
+input[type="text"]:focus {
+    border-color: #2D359D;
+    /* Blue border on focus */
+}
+
+/* Sign-in button styling */
+input[type="submit"] {
+    padding: 12px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Baloo";
+    color: #ffffff;
+    background-color: #2D359D;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1A237E;
+    /* Darker shade of blue on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+/* Link styling within the form */
+form a {
+    font-family: "ABeeZee";
+    font-size: 16px;
+    color: #2D359D;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+form a:hover {
+    color: #1A237E;
+    /* Darker color on hover */
+}
+
+/* Style for the form fields container */
+#form-fields {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between each form group */
+}
+
+/* Flex container for each label and input pair */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* Stack label above the input */
+    align-items: flex-start;
+    /* Align label and input to the left */
+}
+
+/* Label styling */
+.form-group p {
+    font-family: "ABeeZee", sans-serif;
+    color: #2D359D;
+    font-size: 16px;
+    margin-bottom: 5px;
+    /* Space between label and input */
+    text-align: left;
+    /* Ensure the text is aligned to the left */
+    font-weight: bold;
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+}
+
+#alreadyhave {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+#alreadyhave:visited p {
+    color: #2D359D;
+}
+
+@media only screen and (max-width: 750px) {
+    #site-name {
+        font-size: 30px;
+    }
+
+
+    .login-button,
+    .login-button:hover {
+        font-size: 15px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}

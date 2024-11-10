@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/signup2.css" />
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet" />
 </head>
 
 <body>
     <nav>
         <div id="logo-container">
-                <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a> 
-                <a href="index.html" id="site-name">Hidden Havens</a>
+            <a href="index.html"><img src="images\logo.png" alt="logo" id="logo"></a>
+            <a href="index.html" id="site-name">Hidden Havens</a>
         </div>
     </nav>
     <div class="signup-box">
-        <form action="/SlayTheChange/signedup.html" method="get">
+        <form action="signedup.html" method="post">
             <p id="boxtitle">SIGN UP</p>
             <div class="form-fields">
                 <div class="form-group">
@@ -34,11 +34,13 @@
                 </div>
             </div>
             <input type="submit" value="Create Account" id="create-acc-button">
+            <a href="login.html">
+                <p id="alreadyhave">Already have an account?</p>
+            </a>
+
         </form>
 
-        <a href="login.html">
-            <p id="alreadyhave">Already have an account?</p>
-        </a>
+
     </div>
 
 </body>
