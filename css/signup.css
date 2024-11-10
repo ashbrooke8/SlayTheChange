@@ -15,6 +15,11 @@ nav {
     height: 84px;
 }
 
+a {
+    text-decoration: none;
+  }
+  
+
 #logo-container {
     display: flex;
     align-items: center;

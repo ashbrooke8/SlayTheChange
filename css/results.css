@@ -10,6 +10,10 @@ body {
   background-attachment: fixed;
   color: #2d359d;
 }
+a {
+  text-decoration: none;
+}
+
 
 nav {
   display: flex;
@@ -73,8 +77,9 @@ img {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out;
   transition-delay: 0.1s;
-  display: flexbox;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #login-button {
@@ -328,16 +333,35 @@ label {
     box-shadow 0.2s ease-in-out;
 }
 
-label:hover {
-  background-color: #2d359d;
+/* label:hover {
+  background-color: rgb(45, 53, 157);
   color: #ffffff;
+  border: solid 2px #2d359d;
+} */
+
+/* label.active {
+  background-color: rgba(45, 53, 157);
+  color: white;
+  box-shadow: 0 0 5px rgba(45, 53, 157, 0.6);
+} */
+
+label.active {
+  background-color: #2d359d;
+  color: white;
+  box-shadow: 0 0 5px rgba(45, 53, 157, 0.6);
   border: solid 2px #2d359d;
 }
 
 /* Keep the hover style when the checkbox is checked */
-input[type="checkbox"]:checked + label,
+/* input[type="checkbox"]:checked + label,
 label input[type="checkbox"]:checked {
   background-color: #2d359d;
   color: #ffffff;
   border: solid 2px #2d359d;
-}
+} */
+
+/* input[type="checkbox"]:checked + span {
+  background-color: #c1c4fc;
+  color: white;
+  box-shadow: 0 0 5px rgba(193, 196, 252, 0.6);
+} */

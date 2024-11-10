@@ -18,6 +18,11 @@ nav {
     
 }
 
+a {
+    text-decoration: none;
+  }
+  
+
 #logo-container {
     display: flex;
     align-items: center;
