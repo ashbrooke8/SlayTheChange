@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hidden Haven</title>
-    <!-- IMPORT STYLESHEETS -->
     <link rel="stylesheet" href="css/index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Baloo"
       rel="stylesheet"
     />
+    <script>
+      function handleDropdownChange() {
+        const dropdown = document.querySelector(".dropdown-select");
+        const selectedValue = dropdown.value;
+
+        if (selectedValue) {
+          window.location.href = `locations.php?type=${selectedValue}`;
+        }
+      }
+
+      // Attach the function to the dropdown change event
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".dropdown-select");
+        dropdown.addEventListener("change", handleDropdownChange);
+      });
+    </script>
   </head>
   <body>
     <div class="navigation">
