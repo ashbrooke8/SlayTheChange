@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $inputUsername = isset($_POST['username']) ? trim($_POST['username']) : '';
   $inputPassword = isset($_POST['password']) ? trim($_POST['password']) : '';
 
-  // Check credentials against CSV
+  // Check credentials against CSV (matching username and password combination)
   while (($data = fgetcsv($csvFile, 1000, ',')) !== FALSE) {
     $username = $data[0];
     $password = $data[1];
@@ -20,6 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       // Set session to indicate logged-in user
       $_SESSION['loggedin'] = true;
       $_SESSION['username'] = $username;
+      $_SESSION['userdata'] = [
+        'email' => $data[2] ?? '',
+        'full_name' => $data[3] ?? '',
+        'account_type' => $data[4] ?? ''
+      ];
       break;
     }
   }
@@ -83,8 +88,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="questions">
       <p>Forgot your password?</p>
       <p>Don't have an account? <a href="signup.html" id="link">Sign up?</a></p>
-    </div>
-  </form>
-</body>
-
-</html>
