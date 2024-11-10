@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&display=swap");
 
 body {
-     background-image: url("../images/background-no-decor.png");
+     background-image: url("../images/background-with-decor.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,22 +14,38 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+
 }
 
 #logo {
-    width: 60px;
-    height: 50px;
+    width: 80px;
+    height: 70px;
 }
 
-#name {
+#site-name {
     font-family: "baloo";
-    font-size: 40px;
+    font-size: 64px;
     color: #2D359D;
 }
 
+#search-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #search-bar {
-    width: 250px;
-    height: 40px;
+    width: 400px;
+    height: 50px;
     padding: 8px;
     font-size: 16px;
     outline: none;
@@ -38,7 +54,7 @@ nav {
 }
 
 #search-button {
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     margin-left: 5px; 
     padding: 0 10px;
@@ -50,7 +66,7 @@ nav {
 }
 
 #login-button {
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     margin-left: 5px; 
     padding: 0 10px;
@@ -59,12 +75,16 @@ nav {
     color: white; 
     border-radius: 10px;
     cursor: pointer; 
+    margin-right: 20px;
 }
 
 #result-count {
     color: #2D359D;
     font-family: ABeeZee;
     font-weight: bold;
+    font-size: 24px;
+    margin-left: 24px;
+    margin-bottom: 0px;
 }
 
 .content-box {
@@ -88,15 +108,15 @@ nav {
 }
 
 ul {
-    list-style-type: none;        /* Removes the bullet points */
-    padding: 0;                   /* Removes default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-    background-color: #D3D5F8;    /* Sets the background color */
-    padding: 10px 15px;           /* Adds padding for spacing */
-    margin: 5px 0;                /* Adds space between list items */
-    border-radius: 20px;           /* Rounds the corners */
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
 }
 
 .results {
@@ -110,16 +130,41 @@ ul li {
     background: white;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 20px;
+    gap: 30px;
+}
+
+#result-image {
+    border-radius: 20px;
 }
 
 .name-money {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#name {
+    margin-bottom: 0px;
+}
+
+#money {
+    margin-bottom: 0px;
 }
 
 .tags {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
 }
 
 .rating {
@@ -130,4 +175,7 @@ ul li {
 .review {
     display: flex;
     flex-direction: row;
+    background-color: #D3D5F8;
+    padding: 10px 15px;
+    border-radius: 15px;
 }

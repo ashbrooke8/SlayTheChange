@@ -12,9 +12,11 @@
 </head>
 <body>
     <nav>
-        <img src="images\logo.png" alt="logo" id="logo">
-        <p id="name">HIDDEN HAVENS</p>
-        <form action="/search" method="get">
+        <div id="logo-container">
+            <img src="images\logo.png" alt="logo" id="logo">
+            <p id="site-name">HIDDEN HAVENS</p>
+        </div>
+        <form action="/search" method="get" id="search-form">
             <input type="search" placeholder="Search..." id="search-bar">
             <button type="submit" id="search-button">Search</button>
         </form>
@@ -25,28 +27,32 @@
     <div class="filter-area">
         <p id="filter-results">Filter Results</p>
         <ul>
-            <li>Wheelchair Accessible</li>
-            <li>Eco-Friendly</li>
             <li>LGBTQ+</li>
+            <li>Body Positive</li>
+            <li>Accessible</li>
             <li>All-Gender Restrooms</li>
-            <li>Dog Patio</li>
+            <li>Woman Centered</li>
+            <li>Sensory Friendly</li>
+            <li>Eco-Friendly</li>
         </ul>
     </div>
 
     <div class="results">
         <div class="result">
-            <div class="left-content">this will be an image</div>
+            <div class="left-content">
+                <img src="images\twistedimg.jpg" alt="" id="result-image">
+            </div>
             <div class="right-content">
                 <div class="name-money">
-                    <p>Name</p>
-                    <p>$$$</p>
+                    <p id="name">Twisted Element</p>
+                    <p id="money">$$</p>
                 </div>
-                <p>Address</p>
-                <p>blah blah blah blah</p>
+                <p id="address">1006 11 Ave SW, Calgary</p>
+                <p id="description">Hopping gay club featuring weekly events, including karaoke, burlesque & variety shows, with DJs.</p>
                 <div class="tags">
-                    <p>tag1</p>
-                    <p>tag2</p>
-                    <p>tag3</p>
+                    <p class="tag">All-Gender-Bathrooms</p>
+                    <p class="tag">LGBTQ+</p>
+                    <p class="tag">Accessible</p>
                 </div>
                 <div class="rating">
                     <p>heart</p>
